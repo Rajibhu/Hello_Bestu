@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIRTHDAY</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div>
+    <div id="boxL">
+        <video autoplay loop muted plays-inline class="background-clip">
+            <source src="BLACK.mp4">
+        </video>
+            <p id="demo"></p>
+            <h3>Ki Dekh6is!!</h3>
+            <div class="center">
+                <span id="box1"></span>
+                <span id="box2"></span>
+                <span id="box3"></span>
+                <span id="box4"></span>
+                <span id="box0"></span>
+            </div>
+    </div>
+    <div id="boxK" style="display: none;">
+        <header>
+            <a href="https://youtu.be/fB8TyLTD7EE?si=t1xEYM614qrSUPZJ" target="_main" style="text-decoration: none;"><h1>HAPPY BIRTHDAY</h1></a>
+        </header>
+<br>
+<h5><i>Hey... Everyone, Tell You Something....</i></h5>
+<div>
+    <video autoplay loop muted plays-inline class="background-clip">
+        <source src="BLACK.mp4">
+    </video>
+    <div class="aa">
+        <a href="https://youtu.be/ecXnWbiL-cI?si=RdMpedW-dACK3ksO" target="_main">
+            <img src="box1.jpg" alt="Pradip" width="155">
+        </a>
+    </div>
+
+    <div class="aa">
+        <a href="https://youtu.be/cUfTYaVEnoA?si=mOqRRKZOZKV4KaSj" target="_main">
+            <img src="box2.jpg" alt="Eshita" width="155">
+        </a>
+    </div>
+
+    <div class="aa">
+        <a href="https://youtu.be/bWwwWnNh8I0?si=UVzhRSsTqLvlKFGa" target="_main">  
+            <img src="box3.jpg" alt="Goba" width="155">
+        </a>
+    </div>
+
+    <div class="aa">
+        <a href="https://youtu.be/7gUAGZ30F9o?si=3O9Poa59_8k0pyG-" target="_main">  
+            <img src="box4.jpg" alt="Goba" width="155">
+        </a>
+    </div>
+
+    <div class="aa">
+        <a href="https://youtu.be/6swmTBVI83k?si=KkUxw1wiuIJWXvad" target="_main">
+            <img src="box5.jpg" alt="Thakuma" width="155">
+        </a>
+    </div>
+
+    <div class="aa">
+        <a href="https://youtu.be/e-xToC9wNl0?si=U9r5ZafcSGm1rUuI" target="_main">
+            <img src="box6.jpg" alt="Matal" width="155">
+        </a>
+    </div>
+
+    <div class="aa">
+        <a href="https://youtu.be/Uq9gPaIzbe8?si=WFkJUijQvfLWS4km" target="_main">  
+            <img src="box7.jpg" alt="Goba" width="155">
+        </a>
+    </div>
+
+    <div class="aa">
+        <a href="https://youtu.be/I63RkFdgjos?si=qilYlKZjyOB5Z11Q" target="_main">  
+            <img src="box8.jpg" alt="Goba" width="155">
+        </a>
+    </div>
+
+    <div class="aa">
+        <a href="https://youtu.be/ecXnWbiL-cI?si=SW8bdPYBQIMuhEJn" target="_main">  
+            <img src="box9.jpg" alt="Goba" width="155">
+        </a>
+    </div>
+
+    <div class="aa">
+        <a href="https://youtu.be/UgKNP8GHnuk?si=R5viWwT0jBMpq6Dj" target="_main">
+            <img src="box10.jpg" alt="Tuna" width="155">
+        </a>
+    </div>
+
+    <a href="/hello.html"><div class="rajib"><h4>Hello Bestu</h4></div></a>
+</div>
+
+<!-- Adding JavaScript code -->
+<script>
+    // Converting string to required date format 
+    let deadline = new Date("May 14, 2024 00:00:00")
+                    .getTime();
+
+    // To call defined fuction every second
+    let x = setInterval(function () {
+        
+        // Getting current time in required format
+        let now = new Date().getTime();
+
+        // Calculating the difference
+        let t = deadline - now;
+
+        // Getting value of days, hours, minutes, seconds
+        let days = Math.floor(t / (1000 * 60 * 60 * 24));
+        let hours = Math.floor(
+            (t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        let minutes = Math.floor(
+            (t % (1000 * 60 * 60)) / (1000 * 60));
+        let seconds = Math.floor(
+            (t % (1000 * 60)) / 1000);
+
+        // Output the remaining time
+        document.getElementById("demo").innerHTML =
+            days + "d " + hours + "h " + 
+            minutes + "m " + seconds + "s ";
+
+        // Output for over time
+        if (t <= 1) {
+            clearInterval(x);
+            // document.getElementById("demo")
+            // 		.innerHTML = "EXPIRED";
+            var x = document.getElementById ("boxL");
+            var y = document.getElementById ("boxK");
+            x.style.display = "none";
+            y.style.display = "block";
+        }
+    }, 1000);
+</script>
+
+</body>
+</html>
