@@ -30,6 +30,7 @@ h1 {
 
     }
 
+/* For inner div background video */
     .background-clip{
     background-size: auto;
     position: fixed;
@@ -47,6 +48,29 @@ h1 {
 
 @media (max-aspect-ratio:16/9) {
     .background-clip {
+        width: auto;
+        height: 100%;
+    }
+}
+
+/* For outer div background video */
+.background-clip-outer{
+    background-size: auto;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio:16/9) {
+    .background-clip-outer{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio:16/9) {
+    .background-clip-outer {
         width: auto;
         height: 100%;
     }
